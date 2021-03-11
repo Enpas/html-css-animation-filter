@@ -1,0 +1,210 @@
+/* ESERCIZIO 1 */
+.ex-1-square{
+    transition: 2s;
+}
+
+.ex-1-square:hover{
+    background: red;
+}
+
+/* ESERCIZIO 2 */
+.ex-2-square{
+    transition: 2s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+/* ESERCIZIO 3 */
+.ex-3-square{
+    transition: 0.5s;   /* transition: 1s; */
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/* ESERCIZIO 4 */
+.ex-4-square{
+    transition: 1s;
+}
+
+.ex-4-square:hover{
+    background: #f5f5f5;    /* opacity: 0; */
+}
+
+/* ESERCIZIO 5 */
+.ex-5-square{
+    transition: 1s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2); 
+}
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+/* ESERCIZIO 6 */
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* ESERCIZIO 7 */
+.ex-7-img{
+    transition: 2s;
+}
+
+.ex-7-img:hover{
+    filter: sepia(0.6) grayscale(0.5);
+}
+
+/* ESERCIZIO 8 */
+.ex-8-img{
+    transition: 2s;
+}
+
+.ex-8-img:hover{
+    border-radius: 20px;
+    filter: sepia(0.6) grayscale(0.5);
+}
+
+/* ESERCIZIO 9 */
+.ex-9-img{
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    filter: sepia(0.6) grayscale(0.5);
+}
+
+/* ESERCIZIO 10 */
+.ex-10-icon{
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation{
+    0%
+    {
+     transform: rotate(1turn)   
+    }
+}
+
+/* ESERCIZIO 11 */
+.ex-11-icon:hover{
+    animation: semi-rotation 2s 1 linear;
+}
+
+@keyframes semi-rotation{
+    75% 
+    {
+        transform: rotate(320deg);
+    }
+}
+
+/* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-top-white{
+    position: absolute;
+    animation: top-margin 2s 1 linear;
+}
+
+@keyframes top-margin{
+    0% 
+    {
+        left: 20px;
+    }
+    50% 
+    {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 20px;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    position: absolute;
+    animation: bottom-margin 2s 1 linear;
+}
+
+@keyframes bottom-margin{
+    0% 
+    {
+        right: 40px;
+    }
+    50%
+     {
+        right: calc(100% - 60px);
+    }
+    100% 
+    {
+        right: 40px;
+    }
+}
+
+/* ESERCIZIO 13 */
+.ex-13-button:hover .ex-13-top-white{
+    position: absolute;
+    animation: rotation-top 2s 1 linear;
+}
+
+@keyframes rotation-top{
+    0% 
+    {
+        left: 20px;
+        top: -5px
+    }
+    25% {
+        left: calc(100% - 40px);
+        top: -5px
+    }
+    50% {
+        left: calc(100% - 40px);
+        top: 100%;
+    }
+    75% {
+        left: -5px;
+        top: 100%
+    }
+    100% {
+        left: -20px;
+        top: -5px
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    position: absolute;
+    animation: rotation-bottom 2s 1 linear;
+}
+
+@keyframes rotation-bottom{
+    0% 
+    {
+        right: 40px;
+        bottom: -5px;
+    }
+    25% 
+    {
+        right: calc(100% - 40px);
+        bottom: -5px;
+    }
+    50% 
+    {
+        right: calc(100% - 40px);
+        bottom: 100%;
+    }
+    75% 
+    {
+        right: -5px;
+        bottom: 100%
+    }
+    100% 
+    {
+        right: -40px;
+        bottom: -5px
+    }
+}
